@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e8c378a22251fca3c2d29d274c8d211b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e8c378a22251fca3c2d29d274c8d211b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e8c378a22251fca3c2d29d274c8d211b = L.map(
+                "map_e8c378a22251fca3c2d29d274c8d211b",
+                {
+                    center: [47.57155, -122.2791],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_db38ecc6e85b573c33e096157dddb258 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_db38ecc6e85b573c33e096157dddb258.addTo(map_e8c378a22251fca3c2d29d274c8d211b);
+        
+    
+            var marker_e6fbcfb6a17e529c7d90f41d6ae38c0c = L.marker(
+                [47.6081, -122.3361],
+                {
+}
+            ).addTo(map_e8c378a22251fca3c2d29d274c8d211b);
+        
+    
+        var popup_e3913498c34f526a616b9957d48ce034 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5be3bad73faa5ab0a8a8b6fccaa576a = $(`<div id="html_f5be3bad73faa5ab0a8a8b6fccaa576a" style="width: 100.0%; height: 100.0%;">Seattle Downtown<br>Lat: 47.6081<br>Lon: -122.3361</div>`)[0];
+                popup_e3913498c34f526a616b9957d48ce034.setContent(html_f5be3bad73faa5ab0a8a8b6fccaa576a);
+            
+        
+
+        marker_e6fbcfb6a17e529c7d90f41d6ae38c0c.bindPopup(popup_e3913498c34f526a616b9957d48ce034)
+        ;
+
+        
+    
+    
+            var marker_8344c51fb9282d3fe64fd35e55d3f707 = L.marker(
+                [47.4489, -122.3094],
+                {
+}
+            ).addTo(map_e8c378a22251fca3c2d29d274c8d211b);
+        
+    
+        var popup_5d8de1aed7e27d3208ef99dff95ec932 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81a9f22d706bec8c690608295fa491eb = $(`<div id="html_81a9f22d706bec8c690608295fa491eb" style="width: 100.0%; height: 100.0%;">Seattle Airport (SEA)<br>Lat: 47.4489<br>Lon: -122.3094</div>`)[0];
+                popup_5d8de1aed7e27d3208ef99dff95ec932.setContent(html_81a9f22d706bec8c690608295fa491eb);
+            
+        
+
+        marker_8344c51fb9282d3fe64fd35e55d3f707.bindPopup(popup_5d8de1aed7e27d3208ef99dff95ec932)
+        ;
+
+        
+    
+    
+            var marker_ab9e43da46bbd845597af65523573e62 = L.marker(
+                [47.6125, -122.2042],
+                {
+}
+            ).addTo(map_e8c378a22251fca3c2d29d274c8d211b);
+        
+    
+        var popup_85505a80d40eacdf4edf3f610661424e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18904bee4ecbd6661baea55541a8396e = $(`<div id="html_18904bee4ecbd6661baea55541a8396e" style="width: 100.0%; height: 100.0%;">Bellevue Downtown<br>Lat: 47.6125<br>Lon: -122.2042</div>`)[0];
+                popup_85505a80d40eacdf4edf3f610661424e.setContent(html_18904bee4ecbd6661baea55541a8396e);
+            
+        
+
+        marker_ab9e43da46bbd845597af65523573e62.bindPopup(popup_85505a80d40eacdf4edf3f610661424e)
+        ;
+
+        
+    
+    
+            var marker_8636afdc61c9f54027846665594c6e18 = L.marker(
+                [47.6167, -122.2667],
+                {
+}
+            ).addTo(map_e8c378a22251fca3c2d29d274c8d211b);
+        
+    
+        var popup_e441761501c6e4d2e0f6eb5e679c65a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00eef5f2b0f30f8718da6c7732ae5cac = $(`<div id="html_00eef5f2b0f30f8718da6c7732ae5cac" style="width: 100.0%; height: 100.0%;">Lake Washington Center<br>Lat: 47.6167<br>Lon: -122.2667</div>`)[0];
+                popup_e441761501c6e4d2e0f6eb5e679c65a7.setContent(html_00eef5f2b0f30f8718da6c7732ae5cac);
+            
+        
+
+        marker_8636afdc61c9f54027846665594c6e18.bindPopup(popup_e441761501c6e4d2e0f6eb5e679c65a7)
+        ;
+
+        
+    
+</script>
+</html>
